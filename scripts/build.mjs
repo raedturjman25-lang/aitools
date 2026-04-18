@@ -12,7 +12,6 @@ const itemsToCopy = [
   "robots.txt",
   "sitemap.xml",
   "privacy.html",
-  "_redirects",
   "about",
   "admin",
   "assets",
