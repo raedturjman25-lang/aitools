@@ -1,0 +1,5 @@
+name = "aitools"
+compatibility_date = "2026-04-18"
+
+[assets]
+directory = "dist"
