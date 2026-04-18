@@ -24,7 +24,7 @@ body.dark-mode {
   --line: #2c3a50;
   --primary: #66a3ff;
   --primary-dark: #4f86dc;
-  --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.829);
+  --shadow-sm: 0 8px 18px rgba(172, 34, 34, 0.829);
   --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.678);
 }
 
