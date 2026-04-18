@@ -47,7 +47,10 @@ if (themeToggle) {
 }
 
 const searchInput = document.querySelector('[data-search-input]');
-const searchableItems = Array.from(document.querySelectorAll('[data-search-item]'));
+
+function getSearchableItems() {
+  return Array.from(document.querySelectorAll('[data-search-item]'));
+}
 
 function stripHighlight(target) {
   const rawText = target.getAttribute('data-original-title');
@@ -75,6 +78,8 @@ function addHighlight(target, searchTerm) {
 }
 
 function updateSearchResults() {
+  const searchableItems = getSearchableItems();
+
   if (!searchInput || searchableItems.length === 0) {
     return;
   }
