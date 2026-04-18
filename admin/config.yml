@@ -1,10 +1,9 @@
 backend:
-  name: github
-  repo: raedturjman25-lang/aitools
+  name: git-gateway
   branch: main
 
-media_folder: assets/img
-public_folder: /assets/img
+media_folder: images
+public_folder: /images
 
 collections:
   - name: blog
