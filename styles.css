@@ -9,8 +9,8 @@
   --primary-dark: #2558bc;
   --radius: 14px;
   --radius-sm: 10px;
-  --shadow-sm: 0 6px 16px rgba(20, 35, 60, 0.08);
-  --shadow-md: 0 14px 34px rgba(20, 35, 60, 0.12);
+  --shadow-sm: 0 6px 16px rgba(30, 59, 110, 0.438);
+  --shadow-md: 0 14px 34px rgba(30, 58, 107, 0.425);
   --max-width: 1140px;
   --font: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

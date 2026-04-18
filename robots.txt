@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.aitoolshubpro.com/sitemap.xml
+Sitemap: https://www.aitoolshubpro.me/sitemap.xml
