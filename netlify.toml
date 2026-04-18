@@ -1,17 +1,17 @@
 [[redirects]]
-  from = "https://aitoolshubpro.me/*"
-  to = "https://www.aitoolshubpro.me/:splat"
+  from = "https://www.aitoolshubpro.me/*"
+  to = "https://aitoolshubpro.me/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://aitoolshubpro.com/*"
-  to = "https://www.aitoolshubpro.me/:splat"
+  to = "https://aitoolshubpro.me/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.aitoolshubpro.com/*"
-  to = "https://www.aitoolshubpro.me/:splat"
+  to = "https://aitoolshubpro.me/:splat"
   status = 301
   force = true
