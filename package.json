@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Static HTML site for AIToolsHubPro",
   "scripts": {
-    "build": "echo Static HTML site - no build step required",
+    "build": "node scripts/build.mjs",
     "start": "echo Use Netlify Dev or open index.html directly"
   }
 }
