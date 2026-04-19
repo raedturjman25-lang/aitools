@@ -11,3 +11,4 @@ routes = [
 
 [assets]
 directory = "dist"
+run_worker_first = ["/admin", "/admin/*"]
