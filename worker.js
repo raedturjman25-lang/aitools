@@ -4,6 +4,16 @@ export default {
 
     // Protect admin pages with HTTP Basic Auth.
     if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
+      if (!hasAdminCredentials(env)) {
+        return new Response("Admin credentials are not configured in Worker environment variables.", {
+          status: 503,
+          headers: {
+            "Cache-Control": "no-store",
+            "Content-Type": "text/plain; charset=UTF-8",
+          },
+        });
+      }
+
       if (!isAuthorized(request, env)) {
         return new Response("Authentication required", {
           status: 401,
@@ -13,20 +23,26 @@ export default {
           },
         });
       }
+
+      // Ensure /admin resolves to the static index file in Workers assets.
+      if (url.pathname === "/admin") {
+        const adminUrl = new URL(request.url);
+        adminUrl.pathname = "/admin/index.html";
+        request = new Request(adminUrl.toString(), request);
+      }
     }
 
     return env.ASSETS.fetch(request);
   },
 };
 
+function hasAdminCredentials(env) {
+  return Boolean(env.ADMIN_USER && env.ADMIN_PASS);
+}
+
 function isAuthorized(request, env) {
   const expectedUser = env.ADMIN_USER;
   const expectedPass = env.ADMIN_PASS;
-
-  // Deny access until secrets are configured.
-  if (!expectedUser || !expectedPass) {
-    return false;
-  }
 
   const authHeader = request.headers.get("Authorization") || "";
   const [scheme, encoded] = authHeader.split(" ");

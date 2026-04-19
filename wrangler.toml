@@ -2,6 +2,7 @@ name = "aitools"
 compatibility_date = "2026-04-18"
 main = "worker.js"
 workers_dev = true
+keep_vars = true
 
 routes = [
 	{ pattern = "aitoolshubpro.me/*", zone_name = "aitoolshubpro.me" },
