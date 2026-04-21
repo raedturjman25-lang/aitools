@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AI Content Workflow</title>
+  <desc id="desc">Workflow steps connected in a board style illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b2f0a" />
+      <stop offset="100%" stop-color="#ef8c34" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="88" y="84" width="1024" height="462" rx="28" fill="rgba(255,255,255,0.11)" stroke="rgba(255,255,255,0.35)" />
+  <rect x="146" y="170" width="226" height="190" rx="14" fill="rgba(255,255,255,0.2)" />
+  <rect x="486" y="170" width="226" height="190" rx="14" fill="rgba(255,255,255,0.16)" />
+  <rect x="826" y="170" width="226" height="190" rx="14" fill="rgba(255,255,255,0.2)" />
+  <line x1="372" y1="264" x2="486" y2="264" stroke="#fff3e8" stroke-width="8" />
+  <line x1="712" y1="264" x2="826" y2="264" stroke="#fff3e8" stroke-width="8" />
+  <polygon points="478,248 504,264 478,280" fill="#fff3e8" />
+  <polygon points="818,248 844,264 818,280" fill="#fff3e8" />
+  <rect x="146" y="386" width="906" height="110" rx="16" fill="rgba(255,255,255,0.15)" />
+  <text x="152" y="146" fill="#fff5ec" font-size="44" font-family="Segoe UI, Arial, sans-serif" font-weight="700">AI Content Workflow</text>
+</svg>

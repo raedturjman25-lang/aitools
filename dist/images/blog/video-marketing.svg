@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AI Video Marketing</title>
+  <desc id="desc">Video timeline style graphic for fast campaigns.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#30205b" />
+      <stop offset="100%" stop-color="#6f49de" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="98" y="86" width="1004" height="458" rx="28" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.33)" />
+  <rect x="154" y="148" width="892" height="220" rx="16" fill="rgba(15,15,35,0.36)" />
+  <circle cx="600" cy="258" r="66" fill="rgba(255,255,255,0.18)" />
+  <polygon points="578,220 640,258 578,296" fill="#ffffff" />
+  <rect x="154" y="394" width="180" height="90" rx="12" fill="rgba(255,255,255,0.22)" />
+  <rect x="352" y="394" width="180" height="90" rx="12" fill="rgba(255,255,255,0.17)" />
+  <rect x="550" y="394" width="180" height="90" rx="12" fill="rgba(255,255,255,0.22)" />
+  <rect x="748" y="394" width="180" height="90" rx="12" fill="rgba(255,255,255,0.17)" />
+  <text x="156" y="132" fill="#f5f0ff" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="700">AI Video Campaigns</text>
+</svg>
