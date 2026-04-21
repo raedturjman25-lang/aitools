@@ -1,3 +1,30 @@
+const googleAnalyticsMeasurementId = 'G-8LLLL9YY7H';
+
+function initGoogleAnalytics() {
+  if (!googleAnalyticsMeasurementId) {
+    return;
+  }
+
+  if (window.location.pathname.startsWith('/admin/')) {
+    return;
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() {
+    window.dataLayer.push(arguments);
+  };
+
+  const gtagScript = document.createElement('script');
+  gtagScript.async = true;
+  gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsMeasurementId}`;
+  document.head.appendChild(gtagScript);
+
+  window.gtag('js', new Date());
+  window.gtag('config', googleAnalyticsMeasurementId);
+}
+
+initGoogleAnalytics();
+
 const navToggle = document.querySelector('[data-nav-toggle]');
 const navMenu = document.querySelector('[data-nav-menu]');
 
