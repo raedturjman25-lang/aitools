@@ -3,9 +3,14 @@ const BLOG_SOURCE = {
   repo: 'aitools',
   branch: 'main',
   folder: 'content/blog',
-  fallbackImage: '/images/home/blog-entrepreneurs.webp',
+  fallbackImage: '/images/home/blog-entrepreneurs.png',
   maxCards: 6,
 };
+
+const EXCLUDED_BLOG_SLUGS = new Set([
+  '2026-04-19-best-ai-tools-for-productivity-in-2026',
+  '2026-04-20-the-ultimate-guide-to-the-best-ai-productivity-tools-in-2026',
+]);
 
 function parseFrontmatter(markdown) {
   const result = { data: {}, body: markdown || '' };
@@ -172,6 +177,14 @@ async function renderBlogFeed() {
     return;
   }
 
+  // Prefer static cards embedded in HTML when available.
+  if (blogGrid.hasAttribute('data-static-blog-feed') || blogGrid.querySelector('[data-static-blog-card]')) {
+    if (statusNode) {
+      statusNode.remove();
+    }
+    return;
+  }
+
   if (statusNode) {
     statusNode.textContent = 'Loading latest Markdown posts...';
   }
@@ -186,7 +199,14 @@ async function renderBlogFeed() {
 
     const entries = await response.json();
     const markdownFiles = entries
-      .filter((entry) => entry.type === 'file' && /\.(md|markdown)$/i.test(entry.name))
+      .filter((entry) => {
+        if (entry.type !== 'file' || !/\.(md|markdown)$/i.test(entry.name)) {
+          return false;
+        }
+
+        const slug = entry.name.replace(/\.(md|markdown)$/i, '');
+        return !EXCLUDED_BLOG_SLUGS.has(slug);
+      })
       .sort((a, b) => b.name.localeCompare(a.name))
       .slice(0, BLOG_SOURCE.maxCards);
 

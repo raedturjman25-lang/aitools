@@ -108,7 +108,7 @@
         description: postData.description,
         dateIso: toIsoDate(postData.publishDate),
         canonicalUrl: `https://aitoolshubpro.me/blog/${slug}/`,
-        imagePath: imagePath || "/images/home/blog-entrepreneurs.webp",
+        imagePath: imagePath || "/images/home/blog-entrepreneurs.png",
         imageAlt: postData.imageAlt || `${postData.title} featured image`,
         markdownBody: postData.body,
       });
@@ -247,7 +247,7 @@
       `title: \"${sanitizeYaml(title)}\"`,
       `date: \"${toIsoDate(publishDate)}\"`,
       `description: \"${sanitizeYaml(description)}\"`,
-      `image: \"${sanitizeYaml(imagePath || "/images/home/blog-entrepreneurs.webp")}\"`,
+      `image: \"${sanitizeYaml(imagePath || "/images/home/blog-entrepreneurs.png")}\"`,
       category ? `category: \"${sanitizeYaml(category)}\"` : null,
       `url: \"${sanitizeYaml(postUrl)}\"`,
       "---",

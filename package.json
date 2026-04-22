@@ -5,6 +5,10 @@
   "description": "Static HTML site for AIToolsHubPro",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "start": "echo Use Netlify Dev or open index.html directly"
+    "start": "echo Use Netlify Dev or open index.html directly",
+    "optimize:images": "node scripts/compress-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
