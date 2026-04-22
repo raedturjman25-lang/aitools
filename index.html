@@ -59,6 +59,53 @@
       </div>
     </section>
 
+    <section class="section" id="tool-finder">
+      <div class="container">
+        <div class="quiz-shell" data-tool-finder>
+          <div class="section-head">
+            <div>
+              <h2>Tool Finder Quiz</h2>
+              <p class="section-subtitle">Answer 3 quick questions and get your best AI tool matches instantly.</p>
+            </div>
+          </div>
+
+          <form class="quiz-form" data-tool-finder-form>
+            <fieldset class="quiz-group">
+              <legend>1) What is your main goal?</legend>
+              <label><input type="radio" name="goal" value="writing" required> Writing and content</label>
+              <label><input type="radio" name="goal" value="design"> Design and visuals</label>
+              <label><input type="radio" name="goal" value="video"> Video and campaigns</label>
+              <label><input type="radio" name="goal" value="automation"> Workflow automation</label>
+            </fieldset>
+
+            <fieldset class="quiz-group">
+              <legend>2) What is your budget?</legend>
+              <label><input type="radio" name="budget" value="free" required> Free plan first</label>
+              <label><input type="radio" name="budget" value="paid"> Paid plan is fine</label>
+            </fieldset>
+
+            <fieldset class="quiz-group">
+              <legend>3) Where will you use it most?</legend>
+              <label><input type="radio" name="platform" value="web" required> Web or desktop</label>
+              <label><input type="radio" name="platform" value="android"> Android mobile</label>
+              <label><input type="radio" name="platform" value="team"> Team collaboration</label>
+            </fieldset>
+
+            <div class="quiz-actions">
+              <button class="btn btn-primary" type="submit">Show My Best Matches</button>
+              <button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+          </form>
+
+          <div class="quiz-result" data-tool-finder-result hidden>
+            <p class="quiz-result-title">Top recommendations for you</p>
+            <div class="quiz-result-list" data-tool-finder-list></div>
+            <a class="btn btn-secondary" href="/tools/">Browse Full Tools Directory</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="featured-tools">
       <div class="container">
         <div class="section-head">
@@ -77,7 +124,7 @@
               <p>Create SEO-friendly blog posts, product copy, and social captions in minutes.</p>
               <div class="card-footer">
                 <a class="btn btn-primary" href="/tools/">Learn More</a>
-                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored">Affiliate Link</a>
+                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored"></a>
               </div>
             </div>
           </article>
@@ -90,7 +137,7 @@
               <p>Generate branded visuals and ad creatives with advanced text-to-image models.</p>
               <div class="card-footer">
                 <a class="btn btn-primary" href="/tools/">Learn More</a>
-                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored">Affiliate Link</a>
+                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored"></a>
               </div>
             </div>
           </article>
@@ -103,7 +150,7 @@
               <p>Turn scripts into short-form videos with AI voiceover, scenes, and subtitles.</p>
               <div class="card-footer">
                 <a class="btn btn-primary" href="/tools/">Learn More</a>
-                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored">Affiliate Link</a>
+                <a class="btn affiliate-btn" href="#" rel="nofollow sponsored"></a>
               </div>
             </div>
           </article>

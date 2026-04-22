@@ -326,6 +326,87 @@ body.dark-mode .hero-panel {
   max-width: 75ch;
 }
 
+.quiz-shell {
+  background: linear-gradient(165deg, var(--surface) 0%, var(--surface-muted) 100%);
+  border: 1px solid #dce6f4;
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  padding: clamp(18px, 2.5vw, 28px);
+}
+
+.quiz-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.quiz-group {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  min-width: 0;
+}
+
+.quiz-group legend {
+  padding: 0 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.quiz-group label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.quiz-group input[type="radio"] {
+  margin-top: 3px;
+}
+
+.quiz-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.quiz-result {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+.quiz-result-title {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.quiz-result-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.quiz-result-card {
+  min-height: 210px;
+}
+
+.quiz-fit {
+  font-size: 0.86rem;
+  opacity: 0.9;
+}
+
+.quiz-result-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .grid {
   display: grid;
   gap: 16px;
@@ -627,6 +708,116 @@ body.dark-mode .match-highlight {
   opacity: 0.9;
 }
 
+.compare-block {
+  margin-bottom: 20px;
+  background: var(--surface);
+  border: 1px solid #dce6f4;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  padding: 18px;
+}
+
+.compare-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.compare-controls label {
+  display: grid;
+  gap: 6px;
+  color: var(--text-soft);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.compare-controls select {
+  min-height: 40px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.compare-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+  background: var(--surface);
+}
+
+.compare-table th,
+.compare-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+.compare-table th {
+  font-weight: 700;
+  color: var(--text);
+  background: var(--surface-muted);
+}
+
+.compare-table tbody tr:hover {
+  background: rgba(47, 111, 237, 0.06);
+}
+
+.compare-empty {
+  margin: 10px 0 0;
+  color: var(--text-soft);
+}
+
+.compare-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.compare-link {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.compare-table tbody tr.is-selected {
+  background: rgba(47, 111, 237, 0.12);
+}
+
+.compare-result {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+}
+
+.compare-note {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.compare-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.compare-result-card h3 {
+  margin-bottom: 6px;
+}
+
+.compare-result-card p {
+  margin: 0;
+}
+
 @media (max-width: 980px) {
   .grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -642,6 +833,22 @@ body.dark-mode .match-highlight {
 
   .aside-box {
     position: static;
+  }
+
+  .quiz-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quiz-result-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .compare-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .compare-result-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -688,6 +895,19 @@ body.dark-mode .match-highlight {
 
   .grid-4,
   .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-form,
+  .quiz-result-list {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-result-grid {
     grid-template-columns: 1fr;
   }
 

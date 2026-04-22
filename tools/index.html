@@ -49,6 +49,179 @@
         </div>
       </div>
 
+      <section class="compare-block" aria-label="AI tools comparison table" data-compare-table>
+        <div class="section-head">
+          <div>
+            <h2>Comparison Table</h2>
+            <p class="section-subtitle">Filter and compare tool pricing, free plans, ratings, and best use cases.</p>
+          </div>
+        </div>
+
+        <div class="compare-controls">
+          <label>Category
+            <select data-compare-category>
+              <option value="all">All</option>
+              <option value="writing">Writing</option>
+              <option value="design">Design</option>
+              <option value="video">Video</option>
+              <option value="productivity">Productivity</option>
+              <option value="developer">Developer</option>
+              <option value="research">Research</option>
+            </select>
+          </label>
+
+          <label>Pricing
+            <select data-compare-pricing>
+              <option value="all">All</option>
+              <option value="free">Has Free Plan</option>
+              <option value="paid">Paid Only</option>
+            </select>
+          </label>
+
+          <label>Sort By
+            <select data-compare-sort>
+              <option value="rating">Top Rated</option>
+              <option value="name">Name (A-Z)</option>
+              <option value="price-low">Price (Low to High)</option>
+              <option value="price-high">Price (High to Low)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="compare-actions">
+          <button class="btn btn-primary" type="button" data-compare-run>Compare Selected (0/3)</button>
+          <button class="btn btn-secondary" type="button" data-compare-clear>Clear Selection</button>
+        </div>
+
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Tool</th>
+                <th>Category</th>
+                <th>Starting Price</th>
+                <th>Free Plan</th>
+                <th>Platforms</th>
+                <th>Best For</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody data-compare-body>
+              <tr data-category="writing" data-free="true" data-price="0" data-rating="4.8" data-name="WritePilot AI">
+                <td>WritePilot AI</td>
+                <td>Writing</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Web</td>
+                <td>SEO articles and landing copy</td>
+                <td>4.8</td>
+              </tr>
+              <tr data-category="writing" data-free="false" data-price="19" data-rating="4.5" data-name="PromptSmith">
+                <td>PromptSmith</td>
+                <td>Writing</td>
+                <td>$19</td>
+                <td>No</td>
+                <td>Web, Team</td>
+                <td>Prompt libraries and reuse</td>
+                <td>4.5</td>
+              </tr>
+              <tr data-category="design" data-free="false" data-price="15" data-rating="4.7" data-name="ImageForge Studio">
+                <td>ImageForge Studio</td>
+                <td>Design</td>
+                <td>$15</td>
+                <td>No</td>
+                <td>Web</td>
+                <td>Ad visuals and creative assets</td>
+                <td>4.7</td>
+              </tr>
+              <tr data-category="design" data-free="true" data-price="0" data-rating="4.4" data-name="SceneCanvas AI">
+                <td>SceneCanvas AI</td>
+                <td>Design</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Web</td>
+                <td>Mood boards and concepts</td>
+                <td>4.4</td>
+              </tr>
+              <tr data-category="video" data-free="false" data-price="24" data-rating="4.6" data-name="VideoFlow AI">
+                <td>VideoFlow AI</td>
+                <td>Video</td>
+                <td>$24</td>
+                <td>No</td>
+                <td>Web</td>
+                <td>Script-to-video campaigns</td>
+                <td>4.6</td>
+              </tr>
+              <tr data-category="video" data-free="true" data-price="0" data-rating="4.3" data-name="ClipGen Pro">
+                <td>ClipGen Pro</td>
+                <td>Video</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Web</td>
+                <td>Podcast highlights and reels</td>
+                <td>4.3</td>
+              </tr>
+              <tr data-category="productivity" data-free="true" data-price="0" data-rating="4.5" data-name="TaskBrain Mobile">
+                <td>TaskBrain Mobile</td>
+                <td>Productivity</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Android</td>
+                <td>Personal planning and execution</td>
+                <td>4.5</td>
+              </tr>
+              <tr data-category="productivity" data-free="false" data-price="12" data-rating="4.4" data-name="InboxMate AI">
+                <td>InboxMate AI</td>
+                <td>Productivity</td>
+                <td>$12</td>
+                <td>No</td>
+                <td>Web</td>
+                <td>Email summaries and replies</td>
+                <td>4.4</td>
+              </tr>
+              <tr data-category="research" data-free="false" data-price="29" data-rating="4.2" data-name="DataLens AI">
+                <td>DataLens AI</td>
+                <td>Research</td>
+                <td>$29</td>
+                <td>No</td>
+                <td>Web, Team</td>
+                <td>Data insights and charts</td>
+                <td>4.2</td>
+              </tr>
+              <tr data-category="research" data-free="true" data-price="0" data-rating="4.6" data-name="ResearchScope">
+                <td>ResearchScope</td>
+                <td>Research</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Web</td>
+                <td>Document summaries and briefs</td>
+                <td>4.6</td>
+              </tr>
+              <tr data-category="productivity" data-free="false" data-price="9" data-rating="4.1" data-name="VoiceBrief">
+                <td>VoiceBrief</td>
+                <td>Productivity</td>
+                <td>$9</td>
+                <td>No</td>
+                <td>Web, Mobile</td>
+                <td>Meeting notes and actions</td>
+                <td>4.1</td>
+              </tr>
+              <tr data-category="developer" data-free="true" data-price="0" data-rating="4.3" data-name="CodeSprint AI">
+                <td>CodeSprint AI</td>
+                <td>Developer</td>
+                <td>$0</td>
+                <td>Yes</td>
+                <td>Web</td>
+                <td>Tests, docs, and boilerplate code</td>
+                <td>4.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="compare-empty" data-compare-empty hidden>No tools match this filter yet.</p>
+        <div class="compare-result" data-compare-result hidden></div>
+      </section>
+
       <section aria-label="Tools grid" class="grid grid-4" data-search-scope>
         <article class="card tool-card" data-search-item>
           <div class="tool-card-media">
