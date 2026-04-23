@@ -41,7 +41,7 @@
   </header>
 
   <main class="section">
-    <div class="container">
+    <div class="container" data-tools-page>
       <div class="section-head">
         <div>
           <h1>Best AI Tools Directory</h1>
@@ -91,6 +91,7 @@
         <div class="compare-actions">
           <button class="btn btn-primary" type="button" data-compare-run>Compare Selected (0/3)</button>
           <button class="btn btn-secondary" type="button" data-compare-clear>Clear Selection</button>
+          <a class="btn btn-secondary" href="/tools/compare/" data-compare-open>Open Compare Page</a>
         </div>
 
         <div class="compare-table-wrap">
@@ -220,6 +221,60 @@
         </div>
         <p class="compare-empty" data-compare-empty hidden>No tools match this filter yet.</p>
         <div class="compare-result" data-compare-result hidden></div>
+      </section>
+
+      <section class="ratings-block" aria-label="User ratings and reviews" data-reviews-root>
+        <div class="section-head">
+          <div>
+            <h2>User Ratings/Reviews</h2>
+            <p class="section-subtitle">Real user feedback to help visitors choose the right AI tool faster.</p>
+          </div>
+        </div>
+
+        <form class="review-form" data-review-form>
+          <label>Tool
+            <select data-review-tool required>
+              <option value="">Select a tool</option>
+            </select>
+          </label>
+          <label>Rating
+            <select data-review-rating required>
+              <option value="">Select rating</option>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Poor</option>
+            </select>
+          </label>
+          <label class="review-message">Review
+            <textarea data-review-text rows="3" maxlength="280" placeholder="Share what worked well and what can improve." required></textarea>
+          </label>
+          <div class="review-actions">
+            <button class="btn btn-primary" type="submit">Submit Review</button>
+          </div>
+        </form>
+
+        <div class="review-list" data-review-list></div>
+      </section>
+
+      <section class="related-tools-block" aria-label="Related tools suggestions" data-related-widget>
+        <div class="section-head">
+          <div>
+            <h2>Related Tools Widget</h2>
+            <p class="section-subtitle">Discover similar tools in the same category for quick alternatives.</p>
+          </div>
+        </div>
+
+        <div class="related-controls">
+          <label>Pick a tool
+            <select data-related-tool-select>
+              <option value="">Select a tool</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="related-list" data-related-list></div>
       </section>
 
       <section aria-label="Tools grid" class="grid grid-4" data-search-scope>

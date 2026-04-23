@@ -1,0 +1,51 @@
+%PDF-1.1
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 384 >>
+stream
+BT
+/F1 18 Tf
+72 740 Td
+(AI Productivity Toolkit) Tj
+0 -28 Td
+/F1 11 Tf
+(Your free lead magnet from AIToolsHubPro) Tj
+0 -24 Td
+(1. Weekly AI Workflow Planner) Tj
+0 -18 Td
+(2. Prompt Templates for Writing, Video, and Ops) Tj
+0 -18 Td
+(3. Tool Evaluation Scorecard for Faster Decisions) Tj
+0 -18 Td
+(4. 14-Day AI Productivity Sprint Checklist) Tj
+0 -30 Td
+(Use this toolkit to pick better tools and build repeatable systems.) Tj
+0 -26 Td
+(Website: https://aitoolshubpro.me/) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000063 00000 n 
+0000000122 00000 n 
+0000000248 00000 n 
+0000000683 00000 n 
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+753
+%%EOF
