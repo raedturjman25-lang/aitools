@@ -119,6 +119,7 @@ const itemsToCopy = [
   "content",
   "images",
   "privacy-policy",
+  "terms-of-service",
   "tools"
 ];
 
