@@ -20,6 +20,7 @@ export default {
           headers: {
             "Cache-Control": "no-store",
             "Content-Type": "text/plain; charset=UTF-8",
+            "X-Robots-Tag": "noindex, nofollow",
           },
         });
       }
@@ -30,6 +31,7 @@ export default {
           headers: {
             "WWW-Authenticate": 'Basic realm="AITools Admin", charset="UTF-8"',
             "Cache-Control": "no-store",
+            "X-Robots-Tag": "noindex, nofollow",
           },
         });
       }

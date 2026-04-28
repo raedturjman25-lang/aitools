@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aitoolshubpro.me/</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/about/</loc>
@@ -10,18 +10,6 @@
   </url>
   <url>
     <loc>https://aitoolshubpro.me/blog/</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://aitoolshubpro.me/blog/best-ai-tools-2026/</loc>
-    <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://aitoolshubpro.me/blog/free-ai-tools-2026/</loc>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
-    <loc>https://aitoolshubpro.me/blog/best-ai-apps-android-productivity/</loc>
     <lastmod>2026-04-22</lastmod>
   </url>
   <url>
@@ -29,16 +17,28 @@
     <lastmod>2026-04-22</lastmod>
   </url>
   <url>
-    <loc>https://aitoolshubpro.me/blog/ai-video-apps-fast-marketing-campaigns/</loc>
-    <lastmod>2026-04-22</lastmod>
-  </url>
-  <url>
     <loc>https://aitoolshubpro.me/blog/ai-tool-pricing-checklist/</loc>
     <lastmod>2026-04-22</lastmod>
   </url>
   <url>
+    <loc>https://aitoolshubpro.me/blog/ai-video-apps-fast-marketing-campaigns/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://aitoolshubpro.me/blog/best-ai-apps-android-productivity/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://aitoolshubpro.me/blog/best-ai-tools-2026/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
+    <loc>https://aitoolshubpro.me/blog/free-ai-tools-2026/</loc>
+    <lastmod>2026-04-22</lastmod>
+  </url>
+  <url>
     <loc>https://aitoolshubpro.me/contact/</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-27</lastmod>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/privacy.html</loc>
@@ -46,120 +46,82 @@
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/</loc>
-    <lastmod>2026-04-18</lastmod>
-  </url>
-  <url>
-    <loc>https://aitoolshubpro.me/tools/compare/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/clipgen-pro/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/codesprint-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshubpro.me/tools/compare/</loc>
+    <lastmod>2026-04-23</lastmod>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/datalens-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/focussprint-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/imageforge-studio/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/inboxmate-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/notesnap-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/pixelassist/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/promptboard/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/promptsmith/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/researchscope/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/scenecanvas-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/swiftdraft-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/taskbrain-mobile/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/videoflow-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/voicebrief/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/workflowpilot/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aitoolshubpro.me/tools/writepilot-ai/</loc>
     <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
