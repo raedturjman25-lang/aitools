@@ -563,6 +563,18 @@ body.dark-mode .top-picks {
   background: rgba(47, 111, 237, 0.08);
 }
 
+.affiliate-cta-btn {
+  border: 1px solid #1f9d47;
+  background: linear-gradient(135deg, #20b85a, #168f43);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(22, 143, 67, 0.28);
+}
+
+.affiliate-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(22, 143, 67, 0.32);
+}
+
 .article-layout {
   display: grid;
   grid-template-columns: minmax(0, 2.2fr) minmax(220px, 1fr);
