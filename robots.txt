@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin
 Allow: /
 # TODO: Add specific crawl/disallow rules as the content inventory grows.
 

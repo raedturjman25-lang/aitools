@@ -5,10 +5,6 @@ function initGoogleAnalytics() {
     return;
   }
 
-  if (window.location.pathname.startsWith('/admin/')) {
-    return;
-  }
-
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag() {
     window.dataLayer.push(arguments);
