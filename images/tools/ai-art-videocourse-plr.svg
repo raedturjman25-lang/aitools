@@ -1,0 +1,56 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Art VideoCourse PLR Downloads cover art">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="30" x2="1120" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120a1f"/>
+      <stop offset="0.6" stop-color="#2a0f3f"/>
+      <stop offset="1" stop-color="#0b0a16"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="180" y1="140" x2="980" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff3fd1"/>
+      <stop offset="1" stop-color="#9b5bff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.9 0 1 0 0 0.2 0 0 1 0 0.9 0 0 0 1 0" result="glowColor"/>
+      <feMerge>
+        <feMergeNode in="glowColor"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="42" fill="url(#bg)"/>
+  <rect x="70" y="60" width="1060" height="510" rx="34" fill="#0f0f1c" stroke="#3b1f59" stroke-width="2"/>
+
+  <g opacity="0.25">
+    <path d="M110 190H260V160H320V135H380" stroke="#ff3fd1" stroke-width="2"/>
+    <path d="M108 268H240V300H300V330H370" stroke="#9b5bff" stroke-width="2"/>
+    <path d="M1090 190H940V160H880V135H820" stroke="#ff3fd1" stroke-width="2"/>
+    <path d="M1092 270H950V300H888V330H825" stroke="#9b5bff" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <path d="M560 155L710 220L680 380L520 445L430 300Z" fill="url(#neon)" opacity="0.92"/>
+    <path d="M600 180L700 230L675 345L560 400L485 300Z" fill="#21112e" opacity="0.85"/>
+    <path d="M560 155L710 220L680 380L520 445L430 300Z" stroke="#ff3fd1" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(140 130)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="0.3em" fill="#d8c2ff" opacity="0.7">HOW TO MAKE MONEY FROM AI ART</text>
+  </g>
+
+  <g transform="translate(140 460)" filter="url(#glow)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" fill="url(#neon)">AI ART</text>
+    <text x="0" y="78" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#f2eaff">VIDEOCOURSE PLR</text>
+  </g>
+
+  <g transform="translate(140 555)">
+    <rect x="0" y="0" width="420" height="52" rx="26" fill="#ff1b5c"/>
+    <text x="24" y="35" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#ffffff">DELUXE PACKAGE</text>
+  </g>
+
+  <g transform="translate(770 480)">
+    <rect x="0" y="0" width="300" height="72" rx="12" fill="#141224" stroke="#3b1f59" stroke-width="2"/>
+    <text x="20" y="44" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#d6c0ff">Downloads Included</text>
+  </g>
+</svg>
