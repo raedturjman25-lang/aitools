@@ -8,6 +8,8 @@
   <meta name="keywords" content="FunnelCockpit, marketing software, funnel builder, landing pages, email automation">
   <link rel="canonical" href="https://aitoolshubpro.me/tools/funnelcockpit/">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="apple-touch-icon" href="/images/logo.png">
   <meta property="og:title" content="FunnelCockpit — All-In-One Marketing Software">
   <meta property="og:description" content="Build funnels, landing pages and automate email campaigns with FunnelCockpit.">
   <meta property="og:url" content="https://aitoolshubpro.me/tools/funnelcockpit/">
@@ -19,52 +21,82 @@
       <a class="brand" href="/" aria-label="AIToolsHubPro home">
         <img class="brand-logo" src="/images/logo.png" alt="AIToolsHubPro Logo" width="156" height="40" loading="eager" decoding="async">
       </a>
-      <nav class="main-nav">
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" data-theme-toggle>🌙</button>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav class="main-nav" data-nav-menu>
         <a href="/">Home</a>
         <a href="/tools/" class="active">Tools</a>
         <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
       </nav>
     </div>
   </header>
 
   <main class="section">
-    <div class="container">
-      <article class="tool-detail">
-        <h1>FunnelCockpit</h1>
-        <p class="tool-sub">Die All-In-One Marketing Software — funnels, landing pages, and email automation.</p>
+    <div class="container article-layout">
+      <article class="article-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>/</span>
+          <a href="/tools/">Tools</a>
+          <span>/</span>
+          <span aria-current="page">FunnelCockpit</span>
+        </nav>
 
-        <figure class="tool-hero">
+        <h1>FunnelCockpit</h1>
+        <p class="muted">Category: funnel builder, landing pages, and email automation</p>
+
+        <figure class="article-hero-image">
           <img src="/images/tools/funnelcockpit.webp" alt="FunnelCockpit cover art" width="1200" height="630" loading="eager" decoding="async">
         </figure>
 
-        <section>
-          <h2>Overview</h2>
-          <p>FunnelCockpit provides an integrated environment for building marketing funnels, managing mailing lists, and launching campaigns without stitching multiple tools together.</p>
-        </section>
+        <h2>Overview</h2>
+        <p>FunnelCockpit provides an integrated environment for building marketing funnels, managing mailing lists, and launching campaigns without stitching multiple tools together.</p>
 
-        <section>
-          <h2>Key features</h2>
-          <ul>
-            <li>Drag-and-drop funnel builder and landing page templates.</li>
-            <li>Email automation with sequencing and tagging.</li>
-            <li>Conversion tracking and campaign reports.</li>
-            <li>Templates for product launches and lead magnets.</li>
-          </ul>
-        </section>
+        <h2>Key features</h2>
+        <ul>
+          <li>Drag-and-drop funnel builder and landing page templates.</li>
+          <li>Email automation with sequencing and tagging.</li>
+          <li>Conversion tracking and campaign reports.</li>
+          <li>Templates for product launches and lead magnets.</li>
+        </ul>
 
         <section>
           <h2>Action</h2>
           <p class="card-footer">
             <a class="btn btn-primary" href="https://www.digistore24.com/redir/98201/infofc8e/" rel="nofollow" target="_blank">Get FunnelCockpit</a>
             <a class="btn btn-secondary" href="/blog/funnelcockpit/">Read the review</a>
+            <a class="btn btn-secondary" href="/tools/">Back to Tools Directory</a>
           </p>
         </section>
       </article>
+
+      <aside class="aside-box">
+        <h3>Quick Facts</h3>
+        <p><strong>Product:</strong> FunnelCockpit</p>
+        <p><strong>Focus:</strong> Funnels, landing pages, email automation</p>
+        <p><strong>Best For:</strong> Affiliate marketers, course creators, launches</p>
+      </aside>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">© 2026 AIToolsHubPro</div>
+    <div class="container footer-inner">
+      <p>Copyright <span data-current-year></span> AIToolsHubPro. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="/script.js" defer></script>
 </body>
 </html>

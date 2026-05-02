@@ -834,7 +834,7 @@ if (toolsPage && window.location.pathname.startsWith('/tools/')) {
 
       const entry = ratings[slug];
       if (!entry || entry.count === 0) {
-        badge.textContent = 'User rating: No reviews yet';
+        badge.remove();
       } else {
         const avg = (entry.total / entry.count).toFixed(1);
         badge.textContent = `User rating: ${avg}/5 (${entry.count} reviews)`;
