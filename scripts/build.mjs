@@ -118,6 +118,7 @@ const itemsToCopy = [
   "contact",
   "content",
   "images",
+  "templates",
   "privacy-policy",
   "terms-of-service",
   "tools"

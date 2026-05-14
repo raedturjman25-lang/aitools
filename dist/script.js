@@ -1067,3 +1067,50 @@ if (newsletterRoot) {
     });
   }
 }
+
+document.querySelectorAll('[data-copy-trigger]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const targetId = String(button.getAttribute('data-copy-target') || '').trim();
+    if (!targetId) {
+      return;
+    }
+
+    const sourceNode = document.getElementById(targetId);
+    if (!sourceNode) {
+      return;
+    }
+
+    const text = 'value' in sourceNode ? String(sourceNode.value || '') : String(sourceNode.textContent || '');
+    if (!text.trim()) {
+      return;
+    }
+
+    const feedbackNode = button.closest('.prompt-shell')?.querySelector('[data-copy-feedback]');
+
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const tempArea = document.createElement('textarea');
+        tempArea.value = text;
+        tempArea.setAttribute('readonly', 'true');
+        tempArea.style.position = 'fixed';
+        tempArea.style.opacity = '0';
+        document.body.appendChild(tempArea);
+        tempArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempArea);
+      }
+
+      if (feedbackNode) {
+        feedbackNode.hidden = false;
+        feedbackNode.textContent = 'Prompt copied successfully.';
+      }
+    } catch (error) {
+      if (feedbackNode) {
+        feedbackNode.hidden = false;
+        feedbackNode.textContent = 'Copy failed. Please copy manually from the prompt box.';
+      }
+    }
+  });
+});
