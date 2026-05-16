@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "prompts:templates": "node scripts/update-template-prompts.mjs",
-    "start": "echo Use Netlify Dev or open index.html directly",
+    "start": "echo Open index.html directly or use your Cloudflare workflow",
     "optimize:images": "node scripts/compress-images.mjs"
   },
   "devDependencies": {

@@ -110,8 +110,8 @@ body.dark-mode .site-header {
 /* Optional advanced support: drop-in alternate assets with these classes. */
 .brand-logo-light,
 .brand-logo-dark {
-  width: min(140px, 36vw);
-  max-width: 140px;
+  width: min(110px, 36vw);
+  max-width: 110px;
   height: auto;
   object-fit: contain;
 }
