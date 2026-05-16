@@ -192,6 +192,64 @@ body.dark-mode .brand-logo-dark {
   transition: color 0.2s ease;
 }
 
+.templates-nav-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.templates-nav-item > a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.templates-dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 0;
+  min-width: 220px;
+  padding-top: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.templates-nav-item:hover .templates-dropdown,
+.templates-nav-item:focus-within .templates-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.templates-dropdown-list {
+  display: grid;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  padding: 10px;
+}
+
+.templates-dropdown-list a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.templates-dropdown-list a:hover,
+.templates-dropdown-list a:focus {
+  color: var(--primary);
+  background: rgba(47, 111, 237, 0.08);
+}
+
 .main-nav a:hover,
 .main-nav a.active {
   color: var(--primary);
@@ -1083,6 +1141,29 @@ body.dark-mode .match-highlight {
 
   .main-nav.open {
     display: flex;
+  }
+
+  .templates-nav-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .templates-dropdown {
+    position: static;
+    min-width: 0;
+    width: 100%;
+    padding-top: 8px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .templates-dropdown-list {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .grid-4,

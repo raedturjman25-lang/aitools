@@ -24,12 +24,55 @@ initGoogleAnalytics();
 const navToggle = document.querySelector('[data-nav-toggle]');
 const navMenu = document.querySelector('[data-nav-menu]');
 
+function enhanceTemplatesNav() {
+  const categoryLinks = [
+    { label: 'All Templates', href: '/templates/' },
+    { label: 'Marketing', href: '/templates/marketing/' },
+    { label: 'Business', href: '/templates/business/' },
+    { label: 'LinkedIn', href: '/templates/linkedin/' },
+    { label: 'YouTube', href: '/templates/youtube/' },
+    { label: 'Students', href: '/templates/students/' },
+    { label: 'Writing', href: '/templates/writing/' },
+  ];
+
+  document.querySelectorAll('.main-nav > a[href="/templates/"]').forEach((link) => {
+    link.textContent = 'AI Templates';
+
+    if (link.closest('.templates-nav-item')) {
+      return;
+    }
+
+    const navItem = document.createElement('div');
+    navItem.className = 'templates-nav-item';
+
+    const dropdown = document.createElement('div');
+    dropdown.className = 'templates-dropdown';
+
+    const dropdownList = document.createElement('div');
+    dropdownList.className = 'templates-dropdown-list';
+
+    categoryLinks.forEach((item) => {
+      const categoryLink = document.createElement('a');
+      categoryLink.href = item.href;
+      categoryLink.textContent = item.label;
+      dropdownList.appendChild(categoryLink);
+    });
+
+    dropdown.appendChild(dropdownList);
+    navItem.appendChild(link.cloneNode(true));
+    navItem.appendChild(dropdown);
+    link.replaceWith(navItem);
+  });
+}
+
 if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(navMenu.classList.contains('open')));
   });
 }
+
+enhanceTemplatesNav();
 
 const themeToggle = document.querySelector('[data-theme-toggle]');
 const themeStorageKey = 'aitoolshubpro-theme';
